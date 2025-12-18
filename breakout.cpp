@@ -389,7 +389,7 @@ void breakout::loop(void) {
   switch(gameState) {
     case preGame :
         if (screen->touched()) {
-          sleep(500);
+          theIdlers.sleep(500);
           setState(inPLay);
           doBall();
         }
